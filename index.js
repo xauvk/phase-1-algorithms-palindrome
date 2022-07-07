@@ -1,9 +1,23 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const ans = false
+  let rev = ''
+
+  for (let i = word.length - 1; i >= 0; i--) {
+      rev += word.charAt(i)
+      console.log(rev)
+  }
+  // Checking if both the strings are equal
+  if (word === String.valueOf(rev)) {
+      ans = true
+  }
+  return ans
 }
 
 /* 
-  Add your pseudocode here
+  create a new string of char's
+  store letters of in string
+  compare letters at chars of letters
 */
 
 /*
